@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+.header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title-block {
+    background-color: #333;
+    padding: 15px 10px;
+}
+
+.title-block h1 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+/* Загальний стиль для прямокутників */
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333; /* Сірий прямокутник */
+    color: #fff;
+    padding: 15px;
+    border-radius: 0; /* Прямокутна форма */
+    width: 200px;
+    height: 211px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Загальний стиль для іконок */
+.skill img {
+    width: 100px; /* Загальний розмір для всіх іконок */
+    height: 100px;
+    border-radius: 50%; /* За замовчуванням чорне коло */
+    background-color: #000; /* Чорне коло */
+    padding: 10px; /* Відступи для чорного фону */
+    box-sizing: border-box;
+  margin-bottom: 10px; /* Відступ між іконкою та текстом */
+}
+.skill span {
+    font-size: 20px; /* Розмір тексту */
+    font-weight: bold; /* Жирний текст */
+    margin-top: auto; /* Розташування тексту внизу контейнера */
+}
+
+/* Стиль для прямокутних іконок (JavaScript, TypeScript, Firebase) */
+.skill img.rectangular-icon {
+    border-radius: 50%; /* Робимо іконки прямокутними */
+    background-color: #000; /* Чорний фон */
+    padding: 10px; /* Менший відступ для чорного кола */
+}
+
+/* Стиль для GitHub іконки */
+.skill img.github-icon {
+    border-radius: 50%; /* Кругла форма */
+    background-color: transparent; /* Без чорного кола */
+    padding: 0; /* Без відступів */
+    box-shadow: none; /* Без додаткових ефектів */
+}
+
+.info-section {
+    background-color: #2b2b2b;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    max-width: 1200px;
+    gap: 30px;
+    text-align: left;
+}
+
+.info-image img {
+    width: 450px;
+    height: 450px;
+    
+}
+
+.info-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-text h2 {
+    color: #fff; /* Білий колір тексту */
+    font-size: 20px; /* Розмір тексту заголовка */
+    font-weight: bold; /* Жирний текст */
+    text-align: center; /* Вирівнювання по центру */
+    line-height: 1.5; /* Інтервал між рядками */
+}
+
+.info-text h2 span {
+    color: #007bff; /* Синій колір для тексту В НЕ ЗАЛЕЖНОСТІ ВІД ВІКУ */
+    display: block; /* Перенос на новий рядок */
+    font-size: 28px; /* Збільшений розмір тексту */
+}
+
+.info-columns {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.info-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-text ul li {
+    margin-bottom: 20px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon-text img {
+    width: 24px; /* Розмір іконки */
+    height: 24px;
+    margin-right: 10px; /* Відступ між іконкою і текстом */
+}
+
+.icon-text span {
+    font-weight: bold;
+    color: #f39c12;
+    font-size: 18px;
+}
+
+.info-text ul li p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.course-section {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+.course-header {
+    text-align: center; /* Вирівнювання тексту по центру */
+    margin-bottom: 20px; /* Відступ між заголовком і основним блоком */
+}
+
+.course-header h2 {
+    font-size: 28px;
+    color: #e67e22; /* Помаранчевий колір */
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase; /* Верхній регістр */
+}
+
+.course-header h3 {
+    font-size: 24px;
+    color: #007bff; /* Синій колір */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.course-content {
+    display: flex;
+    flex-wrap: wrap; /* Адаптивний режим */
+    gap: 30px;
+    justify-content: center; /* Вирівнювання по горизонталі */
+    align-items: flex-start; /* Вирівнювання по вертикалі */
+}
+
+.course-image img {
+    width: 450px; /* Ширина зображення */
+    height: auto;
+    border-radius: 0; /* Без заокруглення */
+    border: none; /* Без рамки */
+}
+
+.course-text ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+}
+
+.course-text ul li {
+    position: relative;
+    padding-left: 50px; /* Відступ для кола */
+    margin-bottom: 20px;
+}
+
+.course-text ul li .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.course-text ul li strong {
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.course-text ul li p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+footer {
+    display: flex; /* Вирівнювання елементів у рядок */
+    justify-content: space-between; /* Простір між текстом і іконками */
+    align-items: center; /* Вирівнювання по вертикалі */
+    background-color: #000; /* Чорний фон для футера */
+    padding: 10px 10px;
+    color: #fff; /* Білий текст */
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center; /* Вирівнювання тексту по вертикалі */
+    background-color: #000; /* Чорний фон для блоку */
+    color: #fff; /* Білий текст */
+    padding: 5px 10px; /* Відступи навколо тексту */
+    font-size: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: center; /* Вирівнювання по вертикалі */
+}
+
+footer .social-icons img {
+    width: 60px; /* Розмір іконок */
+    height: 60px;
+    background-color: #fff; /* Білий фон для іконок */
+    padding: 10px; /* Відступ всередині білої рамки */
+    box-sizing: border-box; /* Урахування padding і border */
+    display: block;
+}
+
+
